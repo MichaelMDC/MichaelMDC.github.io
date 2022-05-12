@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #eee;
+}
+
+.cabeza{
+    background-color: skyblue;
+    padding: 40px;
+    text-align: center;
+    text-align: center;
+}
+
+.titulo{
+    margin-left: 50px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.barra{
+    margin: auto;
+    width: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 290px;
+    margin-top: 20px;
+}
+
+.barra ul li{
+    list-style: none;
+}
+
+.barra a{
+    transition: 0.5s ease;
+    text-decoration: none;
+    background-color: skyblue;
+    color: black;
+    
+}
+
+.barra a:hover{
+    padding: 10px;
+}
+
+.lista li a{
+    background-color: skyblue;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.lista li a:hover{
+    background-color: rgb(110, 171, 196);
+    color: white;
+}
+
+.lista > li {
+    float: left;
+}
+
+.lista li ul{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+}
+
+.lista li:hover > ul{
+    display: block;
+}
+
+.contenido{
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: #fff;
+}
+
+.mapa{
+    width: 400px;
+    height: 250px;
+    float: right;
+    border-radius: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.mapa:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+.texto{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 23px;
+}
+
+.tabla{
+    border-collapse: collapse;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.tabla th, td{
+    border: solid 1px black;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.tabla tr:hover{
+    background-color: #eee;
+}
+
+footer{
+    background-color: skyblue;
+    padding: 40px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+footer a{
+    color: black;
+    transition: 0.5s;
+    text-decoration: none;
+    float: right;
+    margin: 5px;
+}
+
+footer a:hover{
+    color: rgb(255, 255, 255);
+}
+
+footer p{
+    padding: 0;
+}
+
+.facebook{
+    float: left;
+}
+
+.instagram{
+    float: left;
+}
+
+
