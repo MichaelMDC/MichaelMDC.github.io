@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #eeee;
+}
+
+.cabeza{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(236, 11, 11);
+    padding: 30px;
+}
+
+
+.cabeza a{
+    transition: 1s;
+    padding-right: 40px;
+}
+
+
+.cabeza a:hover{
+    color: black;
+
+}
+
+header h1{
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    font-size: 50px;
+    font-family: 'Questrial', sans-serif;
+    text-shadow: 10px 8px 2px black;
+}
+
+/*
+.lista a{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav{
+    text-align: right;
+}*/
+
+.barra{
+    background-color: rgb(236, 11, 11);
+    text-align: center;
+    margin-right: 100px;
+}
+
+.barra a{
+    transition: 0.5s;
+    text-decoration: none;
+    color: rgba(43, 37, 37, 0.733);
+    padding: 20px;
+}
+
+.barra ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.barra a:hover{
+    padding: 15px;
+    background-color: rgb(236, 11, 11);
+    color: rgb(255, 255, 255); 
+}
+
+.lista > li{
+    float: left;
+}
+
+.lista li a {
+    background-color: rgb(236, 11, 11);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+}
+
+.lista li a:hover{
+    background-color: rgb(165, 13, 13);
+}
+
+.lista li ul{
+    display: none;
+    position: absolute;
+    min-width: 130px;
+}
+
+.lista li:hover >ul{
+    display: block;
+}
+
+
+
+
+.texto{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 23px;
+}
+
+.texto2{
+    text-align: justify;
+    font-family: 'Questrial', sans-serif;
+}
+
+.contenido{
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: #fff;
+}
+
+.mapa{
+    width: 400px;
+    height: 250px;
+    float: right;
+    border-radius: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.mapa:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+
+.tabla{
+    border-collapse: collapse;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.tabla th{
+    background-color: rgb(255, 0, 0);
+    
+}
+
+.tabla th, td{
+    border: solid 1px black;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.tabla tr:hover{
+    background-color: rgb(211, 210, 210);
+}
+
+footer{
+    background-color: rgb(236, 11, 11);
+    padding: 40px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+footer p{
+    color: white;
+}
+
+footer a{
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+    float: right;
+    margin: 5px;
+}
+
+footer a:hover{
+    color: black;
+}
+
+.face{
+    float: left;
+}
+
+.twt{
+    float: left;
+}
+
+footer p{
+    padding: 0;
+}
+
