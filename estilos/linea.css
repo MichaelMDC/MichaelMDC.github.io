@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+
+.cabeza{
+    background-color: rgb(233, 219, 31);
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+}
+
+.cabeza h1{
+    font-size: 25px;
+    text-shadow: 15px 10px 5px  rgba(59, 60, 63, 0.753);
+}
+
+.barra{
+    margin: auto;
+    width: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 35%;
+    padding-top: 20px;
+    
+}
+
+
+
+
+
+ul li{
+    list-style: none;
+}
+
+.lista li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    background-color: rgba(233, 220, 31, 0.856);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lista li a:hover{
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+.lista li a:hover{
+    background-color: rgb(197, 186, 27);
+}
+
+.lista > li {
+    float: left;
+}
+
+.lista li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+
+}
+
+.lista li:hover > ul{
+    display: block;
+}
+
+
+
+
+
+
+
+body{
+    background: #eee;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(30, 41, 20);
+}
+
+.titulo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 35vh;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+
+/*Nos ayudara para crear una linea*/
+.contenedor::after {
+	/* Insertan contenido después de la acción inicial */
+	content: "";
+	width: 2px;
+	height: 100%;
+	background: #1b3231;
+	position: absolute;
+	top: 0;
+	/* calcular el ancho de un elemento */
+	left: calc(50% - 1px);
+	/* Cuando varios elementos se superponen, los elementos con mayor valor z-index cubren aquellos con menor valor. */
+	z-index: 1;
+}
+
+.evento {
+	display: flex;
+	/* alinea los elementos del contenedor flexible */
+	justify-content: space-between;
+	margin-bottom: 200px;
+	position: relative;
+}
+
+/*Realiza un circulo en la linea de separacion*/
+.evento::after {
+	content: "";
+	display: block;
+	width: 14px;
+	height: 14px;
+	border-radius: 100px;
+	background: #DCDFD9;
+	border: 2px solid #1b3231;
+	position: absolute;
+	z-index: 2;
+	top: calc(50% - 9px);
+	left: calc(50% - 9px);
+}
+
+
+/*El texto sera flexible*/
+.fecha {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	width: calc(42% + 20px);
+	font-size: 32px;
+	font-weight: normal;
+}
+
+.foto {
+	width: 42%;
+	border: 10px solid #fff;
+	position: relative;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*Como se modificara el tamaño de la foto*/
+.foto::after {
+	content: "";
+	display: block;
+	border: 20px solid transparent;
+	border-left: 20px solid #fff;
+	position: absolute;
+	right: -50px;
+	top: calc(50% - 20px);
+}
+
+.foto img {
+	width: 100%;
+	vertical-align: top;
+}
+
+/* Representa elementos cuya posición numérica en una serie de hermanos es impar */
+.evento:nth-child(even){
+	flex-direction: row-reverse;
+}
+
+.evento:nth-child(even) .fecha {
+	justify-content: end;
+}
+
+.evento:nth-child(even) .foto::after {
+	content: "";
+	border: 20px solid transparent;
+	border-right: 20px solid #fff;
+	right: initial;
+	left: -50px;
+}
